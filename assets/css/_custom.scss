@@ -1,0 +1,91 @@
+@charset 'UTF-8';
+.btn {
+    border-radius: 5px;
+    margin: 10px 0 0;
+    text-transform: none;
+    display: block;
+    text-align: center;
+    padding: 0.4rem 0rem;
+    height: auto;
+    font: 400 normal 0.9rem $pri-font;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    width: 100%;
+    &.-pri {
+        background: $pri-color;
+        border: solid 2px $pri-color;
+    }
+    &.-sec{
+        background: $three-color;
+        border: solid 2px $three-color;
+    }
+    &.-three{
+        margin: 10px 0;
+        background: #d1d1d1;
+        border: solid 2px #d1d1d1; 
+    }
+    &.-grup {
+        width: 100%;
+        background: $pri-color;
+        border: solid 2px $pri-color;
+    }
+    &.-grup2 {
+        width: 100%;
+        background: $sec-color;
+        border: solid 2px $sec-color;
+    }
+    &.-manage{
+        margin: 0;
+        padding: 0.05rem 0rem;
+        font: 400 normal 0.8rem $pri-font;
+        background: $pri-color;
+        border: solid 2px $pri-color;
+    }
+    &.-manage2{
+        margin:  3px 0 0;
+        font: 400 normal 0.8rem $pri-font;
+        padding: 0.05rem 0rem;
+        background: $sec-color;
+        border: solid 2px $sec-color;
+    }
+    &.-facebook{
+        background: #2f4fb8;
+        border: solid 2px #2f4fb8;
+    }
+    &.-google{
+        background: $sec-color;
+        border: solid 2px $sec-color;
+    }
+    &.-mobile{
+        background: $pri-color;
+        border: solid 2px$pri-color;
+    }
+}
+
+/* Section-Header */
+
+.section-header {
+    padding: 10px 0 0;
+    margin: 0;
+    text-align: left;
+    height: auto;
+    .head-title {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        .line {
+            width: 100%;
+            height: 1px;
+            background: $three-color;
+        }
+        .text {
+            white-space: nowrap;
+            margin-left: 10px;
+            margin-right: 10px;
+            font: 400 normal 0.9rem $pri-font;
+            color: $three-color;
+        }
+    }
+}
+

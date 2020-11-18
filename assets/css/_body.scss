@@ -1,0 +1,301 @@
+@charset 'UTF-8';
+.home-main {
+    .main-cover {
+        position: relative;
+        z-index: 1;
+        &.-home {
+            background: url('../img/bg-homemain.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            &:before {
+                display: block;
+                content: '';
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+                background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4d000000', GradientType=1);
+            }
+        }
+        &.-page {
+            position: relative;
+            z-index: 1;
+            background: $pri-color;
+            .prev-icon {
+                position: absolute;
+                z-index: 2;
+                top: 40%;
+                left: 1vw;
+                i {
+                    font-size: 24px;
+                    color: #ffffff;
+                }
+            }
+        }
+        .title-main {
+            padding: 5vw 0;
+            text-align: center;
+            .title {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+                font: 700 normal 4rem $sec-font;
+                color: #ffffff;
+                &:after{
+                    display: block;
+                    content: 'www.tracefarm.org';
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    position: absolute;
+                    font: 400 normal 0.8rem $pri-font;
+                    left: 95px;
+                    transform: translateY(-50px);
+                    background:transparent;
+                   
+                }
+                &.-page {
+                    font: 700 normal 2rem $sec-font;
+                    &:after{
+                        font: 400 normal 8px $pri-font;
+                        left: 70px;
+                        transform: translateY(-25px);
+                        background:transparent;
+                       
+                    }
+                }
+            }
+            &.-page {
+                padding: 1vw 0;
+            }
+        }
+    }
+    .form-login {
+        padding: 1vw;
+        p {
+            font: 400 normal 1.2rem $pri-font;
+            color: $pri-color;
+        }
+    }
+    .form-item {
+        padding: 10px 0 0;
+        &.-sec{
+            padding: 10px 0 20px;
+            border-bottom: 1px solid #dddddd;
+        }
+    }
+    .input,
+    .textarea {
+        font: 400 normal 0.9rem $pri-font;
+    }
+    .item {
+        padding: 0 1vw 1vw 1vw;
+        &.-qrcode {
+            text-align: center;
+            padding: 5vw 1vw;
+            .img-qrcode {
+                text-align: center;
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+        &.-social{
+            padding: 0;
+        }
+        &.-saveevent{
+            padding: 0.5vw 1vw;
+        }
+        &.-selectplants2{
+            padding: 2vw 1vw;
+        }
+        &.-addarea{
+            padding: 2vw 1vw;
+            i{
+                font-size: 32px;
+                color: $sec-color;
+            }
+        }
+        &.-managearea{
+            padding:  1vw 1vw 5vw;
+        }
+        &.-information{
+            padding: 0;
+        }
+        .item-wrapper {
+            padding: 0.2vw 0;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #dddddd;
+            &.-managearea{
+                border-bottom: none;
+            }
+            &.-managearea{
+                align-items: baseline; 
+            }
+            &.-member{
+                border-bottom:none;
+            }
+            &.-information{
+                padding: 0.5vw 1vw;
+            }
+            &.-social{
+                border-bottom: none;
+            }
+            .list-item {
+                width: 100%;
+                &.-one {
+                    width: 60%;
+                }
+                &.-two {
+                    text-align: right;
+                    width: 40%;
+                }
+                &.-dataitem{
+                    width: 90%;
+                }
+                &.-arrowitem{
+                    width: 10%;
+                }
+                &.-managearea{
+                    padding: 0 0.2vw;
+                    text-align: center;
+                    width: 25%;
+                    .edit-delete{
+                        padding: 3px 0 0;
+                    }
+                }
+                &.-inforimg{
+                    text-align: center;
+                    width: 30%;
+                }
+                &.-infordata{
+                    padding-left: 15px;
+                    width: 70%; 
+                }
+                &.-member{
+                    padding: 0 5px;
+                    width: 20%;
+                }
+                &.-dataold{
+                    width: 70%;
+                }
+                &.-dateold{
+                    text-align: right;
+                    width: 30%;
+                }
+                &.-social{
+                    width: 33.33%;
+                    padding: 0 2px;
+                    i{
+                       font-size: 20px;
+                        color: #ffffff;  
+                    }
+                }
+            }
+        }
+        .title {
+            font: 400 normal 1.5rem $pri-font;
+            color: $pri-color;
+            &.-infor{
+                font: 400 normal 1.2rem $pri-font;
+                color: #000000;
+            }
+            &.-inforsub{
+                font: 400 normal 1.3rem $pri-font;
+                color: #9b9b9b;
+            }
+            &.-dataold{
+                font: 400 normal 1rem $pri-font;
+                color: #9b9b9b;
+            }
+        }
+        .date {
+            font: 400 normal 1rem $pri-font;
+            color: $three-color;
+            &.-old{
+                font: 400 normal 1rem $pri-font;
+                color: #9b9b9b;
+            }
+        }
+        i {
+            font-size: 14px;
+            color: $three-color;
+            position: relative;
+            z-index: 1;
+        }
+        p{
+            padding: 0;
+            font: 400 normal 1rem $pri-font;
+            color: #000000;
+        }
+        address{
+            padding: 0;
+            font: 400 normal 0.9rem $pri-font;
+            color: #000000;
+            i{
+                font-size: 20px;
+                color: $pri-color;
+            } 
+        }
+        .read-more{
+            padding: 10px 0 0;
+            text-align: right;
+            font: 400 normal 1rem $pri-font;
+            color: #0389f7; 
+        }
+    }
+    .header-section {
+        padding: 0.5vw 0;
+        text-align: center;
+        border-bottom: 1px solid #dddddd;
+        .title {
+            font: 400 normal 2rem $pri-font;
+            color: $pri-color;
+        }
+    }
+}
+
+.btn-group {
+    padding: 0 0 1vw;
+    display: flex;
+    &.-login{
+        padding: 0;
+    }
+    .btn-item {
+        width: 100%;
+        &.-harvest {
+            padding: 0 0.3vw;
+            width: 50%;
+        }
+        &.-login{
+            padding: 0 2px;
+        }
+    }
+}
+.data-old{
+    padding: 0.5vw 1vw;
+}
+.group-member{
+    border-top: 1px solid #dddddd;
+    padding: 0.5vw 0 0 1vw;
+    .list-member{
+        padding: 5px 0 0;
+        >li{
+            display: inline-block;
+            img{
+                width: 70px;
+                height: auto;
+            }
+        }
+    }
+}
+.title:not(:last-child), .subtitle:not(:last-child) {
+    margin-bottom: 0rem;
+}

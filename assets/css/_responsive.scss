@@ -1,0 +1,85 @@
+@charset 'UTF-8';
+@media only screen and (max-width:767px) {}
+
+@media only screen and (min-width:767px) {}
+
+@media only screen and (min-width:768px) and (max-width:991px) {}
+
+@media only screen and (max-width:991px) {
+    .home-main {
+        .main-cover {
+            &.-home {
+                .title-main {
+                    padding: 15vw 0;
+                    .title {
+                        font: 700 normal 4rem $sec-font;
+                    }
+                }
+            }
+            &.-page{
+                .prev-icon {
+                    top: 35%;
+                    left: 5vw;
+                }
+            }
+        }
+        .form-login {
+            padding: 5vw;
+        }
+        .item {
+            padding: 2vw 5vw;
+            &.-qrcode {
+                text-align: center;
+                padding: 2vw 5vw;
+                .img-qrcode {
+                    text-align: center;
+                    img {
+                        width: 200px;
+                        height: auto;
+                    }
+                }
+            }
+            &.-social{
+                padding: 0;
+            }
+            &.-saveevent{
+                padding: 2vw 5vw;
+            }
+            &.-selectplants2{
+                padding: 2vw 5vw;
+            }
+            &.-addarea{
+                padding: 2vw 5vw;
+                i{
+                    font-size: 32px;
+                    color: $sec-color;
+                }
+            }
+            &.-managearea{
+                padding: 2vw 5vw;
+            }
+            &.-information{
+                padding: 2vw 5vw;
+            }
+        }
+        
+    }
+    /* Main-Footer */
+.main-footer{
+    .footer-item{
+        padding: 2vw 0 0;
+    }
+}
+}
+
+@media only screen and (min-width:992px) {
+    /* Hide Mobile Bar Toggle Menu */
+    .toggle-menu,
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1199px) {}
+
+@media only screen and (min-width:1200px) {}
